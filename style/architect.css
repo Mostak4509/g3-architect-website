@@ -11,6 +11,17 @@
   font-style: normal;
 }
 
+
+/* main content style here */
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  margin-top: 130px;
+}
+
 /* nab bar style here */
 
 .display-flex{
@@ -43,6 +54,15 @@
   color: #424242;
 }
 
+/* dark3 color */
+.text-gray-light{
+  color: #727272;
+}
+
+.text-primary{
+  color: #FF900E;
+}
+
 
 .navbar, .banner{
   max-width: 1440px;
@@ -68,7 +88,7 @@
   font-size: 4rem;
 }
 
-.banner-btn{
+.primary-btn{
   font-weight: 700;
   background-color: #FF900E;
   border-style: none;
@@ -82,14 +102,60 @@
   width: 100%;
 }
 
+/* feature and content related design */
+
+.feature{
+  align-items: center;
+}
+
+.feature-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.feature-content{
+  margin-left: 130px;
+}
+
+.feature-title{
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+#quick-list{
+  color: #727272;
+}
+
+#our-feature{
+  color: #131313;
+}
+
 /* Responsive media query  */
 
 @media screen and (max-width: 576px) {
 
-  .navbar, .nav-links{
+  .navbar, 
+  .nav-links, 
+  .feature{
     flex-direction: column;
   }
+  .feature-img{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-content{
+    margin-left: 20px;
+  }
+
   
+}
+
+/* for medium device responsive */
+@media screen and (min-width: 576px) and ( max-width: 992px){
+  .feature{
+    flex-direction: column;
+  }
 }
 
 
