@@ -176,12 +176,6 @@ main > section{
   
  
 }
-.feature2-container{
-  width: 580px;
-  height: 1050px;
-  margin-right: 140px;
-  
-}
 
 
 
@@ -229,6 +223,11 @@ main > section{
 
 
 @media screen and (max-width: 576px) {
+
+  .feature-two{
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+  }
   
  
 }
@@ -300,6 +299,48 @@ main > section{
     grid-template-columns: repeat(2, 1fr);
   }
   
+}
+
+
+/* Our sponsors section  related style here  */
+
+.sponsors-container{
+  text-align: center;
+
+}
+.sponsors-section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+
+
+.sponsors-img{
+  justify-content: space-between;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  filter: grayscale(100%);
+}
+
+/* sponsors section media query */
+
+@media screen and (max-width: 576px) {
+  .sponsors-section
+  .sponsors-img{
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+}
+
+/* footer section related style here */
+
+.footer-section{
+  background-color: footer-section;
 }
 
 
